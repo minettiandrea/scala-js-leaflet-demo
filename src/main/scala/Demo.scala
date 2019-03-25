@@ -9,7 +9,6 @@ import scaladget.tools._
 
 object Demo {
 
-  val accessToken = "<accessToken>"
 
 
 
@@ -24,7 +23,7 @@ object Demo {
       """.stripMargin
 
     val demos = Seq(
-      QuickStart(accessToken).elementDemo,
+      QuickStart(AccessToken.accessToken).elementDemo,
     )
 
     val tabs = demos.foldLeft(Tabs.tabs()) { (acc, demo) =>
